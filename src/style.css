@@ -1,0 +1,107 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+button, a{
+  cursor: pointer;
+  }
+
+a{
+    text-decoration: none;
+}
+
+
+/* Footer */
+
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+/* footer support */
+  margin-bottom: 48px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+
+.fa-github {
+  color: white;
+  font-size: 22px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+:root{
+  --border-radius: 50%;
+  --ball-background:rgb(25, 25, 196);
+  --text:white;
+  
+
+}
+
+
+/* Ball styling */
+
+.ball{
+  border-radius:var(--border-radius);
+  background-color:var(--ball-background);
+  color: var(--text);
+  font-size: 2rem;
+  font-weight: 700;
+  height: 10vh;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10vh;
+  right: 5vw;
+  transition: 0.3s;
+}
+
+.ball.clicked{
+  rotate: 45deg;
+  
+}
+   
